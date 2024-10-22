@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة دروبشيبينغ مجانية للتجارة الإلكترونية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#121212',
+                        'dark-surface': '#1E1E1E',
+                        'neon-yellow': '#FFFF00',
+                        'neon-pink': '#FF6EC7',
+                        'neon-blue': '#00FFFF',
+                        'neon-green': '#39FF14',
+                    },
+                    fontFamily: {
+                        'brutalist': ['Noto Sans Arabic', 'Arial', 'Helvetica', 'sans-serif'],
+                    },
+                    keyframes: {
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        },
+                    },
+                    animation: {
+                        wiggle: 'wiggle 1s ease-in-out infinite',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-white font-brutalist">
+    <header class="bg-dark-surface p-4 border-b-4 border-neon-yellow">
+        <nav>
+            <ul class="flex justify-around text-xl">
+                <li><a href="#home" class="hover:text-neon-yellow transition-colors duration-300">الرئيسية</a></li>
+                <li><a href="#about" class="hover:text-neon-yellow transition-colors duration-300">عن الدورة</a></li>
+                <li><a href="#features" class="hover:text-neon-yellow transition-colors duration-300">المميزات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4">
+        <section id="home" class="my-16 text-center">
+            <h1 class="text-6xl font-bold mb-6 text-neon-yellow">تعلم الدروبشيبينغ مجانًا</h1>
+            <p class="text-2xl mb-8 text-gray-300">انضم إلى دورتنا الشاملة المجانية على يوتيوب واكتشف أسرار النجاح في عالم التجارة الإلكترونية</p>
+            <a href="https://www.youtube.com/watch?v=hJhC7xAUl58&list=PLD3I6jMNELmlzczmVW5KXPnVygJA4H-5r&index=1" class="bg-neon-pink text-dark-bg text-2xl px-8 py-4 rounded-lg border-4 border-white hover:bg-dark-bg hover:text-neon-pink transition-all duration-300 animate-wiggle">شاهد الدورة الآن</a>
+        </section>
+
+        <section id="about" class="my-16 bg-dark-surface p-8 rounded-lg border-4 border-neon-blue">
+            <h2 class="text-4xl font-bold mb-4 text-neon-blue">عن الدورة</h2>
+            <p class="text-xl text-gray-300">دورتنا المجانية مصممة لمساعدتك على إطلاق وإدارة متجر دروبشيبينغ ناجح. ستتعلم كل ما تحتاج لمعرفته عن اختيار المنتجات، وإعداد متجرك، والتسويق، وخدمة العملاء.</p>
+        </section>
+
+        <section id="features" class="my-16">
+            <h2 class="text-4xl font-bold mb-8 text-neon-green">مميزات الدورة</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <li class="bg-dark-surface p-6 rounded-lg border-4 border-neon-yellow hover:bg-neon-yellow hover:text-dark-bg transition-all duration-300">دروس فيديو عالية الجودة على يوتيوب</li>
+                <li class="bg-dark-surface p-6 rounded-lg border-4 border-neon-pink hover:bg-neon-pink hover:text-dark-bg transition-all duration-300">محتوى مجاني بالكامل</li>
+                <li class="bg-dark-surface p-6 rounded-lg border-4 border-neon-blue hover:bg-neon-blue hover:text-dark-bg transition-all duration-300">تعلم بالسرعة التي تناسبك</li>
+                <li class="bg-dark-surface p-6 rounded-lg border-4 border-neon-green hover:bg-neon-green hover:text-dark-bg transition-all duration-300">تحديثات منتظمة للمحتوى</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark-surface text-white text-center p-4 border-t-4 border-neon-yellow">
+        <p>جميع الحقوق محفوظة © 2024 دورة الدروبشيبينغ المجانية</p>
+    </footer>
+
+    <a href="https://www.youtube.com/watch?v=hJhC7xAUl58&list=PLD3I6jMNELmlzczmVW5KXPnVygJA4H-5r&index=1" class="fixed bottom-8 left-8 bg-neon-green text-dark-bg text-xl px-6 py-3 rounded-lg border-4 border-white hover:bg-dark-bg hover:text-neon-green transition-all duration-300 animate-wiggle">شاهد الدورة الآن</a>
+</body>
+</html>
